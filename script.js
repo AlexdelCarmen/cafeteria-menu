@@ -4,8 +4,9 @@ class MenuApp {
     this.items = items;
   }
 
-  clearMenu (parent) {
-    // Need to clear menu render each time an event happens. 
+  clearMenu(parent) {
+    // Need to clear menu render each time an event happens.
+    while (parent.firstChild) parent.removeChild(parent.firstChild);
   }
 
   renderMenuCard(parent) {
@@ -51,6 +52,7 @@ class MenuApp {
   }
 
   renderMenu(filter, items, parent) {
+    this.clearMenu(parent);
     if (filter === "all") {
       for (let i = 0; i < items.length; i++) {
         let newCard = this.renderMenuCard(parent);
