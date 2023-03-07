@@ -97,3 +97,34 @@ h2 {
   font-size: 18px;
   color: #e7b10a;
 }
+
+@media screen and (min-width: 768px) {
+  #menu {
+    max-width: unset;
+    padding: 1rem;
+  }
+
+  .menu-items {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: auto;
+    max-width: 150vmin;
+    align-items: center;
+    gap: 1%;
+  }
+
+  .menu-card {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
