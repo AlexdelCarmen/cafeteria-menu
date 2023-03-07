@@ -31,6 +31,7 @@ body {
 
 h1 {
   margin-bottom: 0.5rem;
+  font-size: 28px;
 }
 
 .underline {
@@ -51,5 +52,48 @@ button {
   border: none;
   outline: none;
   background-color: transparent;
-  min-width: 50px;
+  min-width: 30px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.filter {
+  border: 1.5px solid #4C4B16;
+  padding: 0.25rem 0.65rem;
+  color: #4C4B16;
+  transition: all 0.1s ease-in-out;
+}
+
+.filter:hover {
+  background-color: #4C4B16;
+  color: white;
+  font-weight: 700;
+}
+
+.menu-card {
+  border: 1px solid #e7b10a;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 375px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 0.6rem;
+}
+
+h2 {
+  color: #4C4B16;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  margin-top: -1%;
+  font-size: 18px;
+  color: #e7b10a;
 }
